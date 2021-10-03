@@ -1,4 +1,5 @@
 import './App.css';
+import PhotosDisplay from './photosDisplay'
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <header className="App-header">
           <h1>Corbin McNeill</h1>
       </header>
+      <PhotosDisplay/>
     </div>
   );
 }
