@@ -19,7 +19,7 @@ export default function PhotosDisplay() {
 
     return (
         <div>
-            <Gallery photos={myPhotos} />
+            <Gallery photos={myPhotos} onClick={openLightbox}/>
             <ModalGateway>
                 {viewerIsOpen ? (
                     <Modal onClose={closeLightbox}>
