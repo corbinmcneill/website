@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
+import PhotosFrame from "./photoFrame";
+import { Modal, ModalGateway } from "react-images";
 import { myPhotos } from "./myPhotos";
 
 export default function PhotosDisplay() {
@@ -23,14 +24,7 @@ export default function PhotosDisplay() {
             <ModalGateway>
                 {viewerIsOpen ? (
                     <Modal onClose={closeLightbox}>
-                        <Carousel
-                            currentIndex={currentImage}
-                            views={myPhotos.map(x => ({
-                                ...x,
-                                srcset: x.srcSet,
-                                caption: x.title
-                            }))}
-                        />
+                        <PhotosFrame image={myPhotos[currentImage]}/>
                     </Modal>
                 ) : null}
             </ModalGateway>

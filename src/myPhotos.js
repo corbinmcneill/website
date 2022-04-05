@@ -43,5 +43,10 @@ export const myPhotos = [
     src: "https://website-photos-989832117645.s3.amazonaws.com/DSC00278.jpg",
     width: 1,
     height: 1
+  },
+  {
+    src: "https://website-photos-989832117645.s3.amazonaws.com/DSC00159.jpg",
+    width: 1,
+    height: 1
   }
 ];
